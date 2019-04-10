@@ -1,3 +1,6 @@
+# ODBC config
+db_config.js
+.DS_Store
 # Logs
 logs
 *.log
