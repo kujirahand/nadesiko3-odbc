@@ -1,6 +1,6 @@
 {
   "name": "nadesiko3-odbc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ODBC Plug-in for Nadesiko3",
   "main": "src/plugin_odbc.js",
   "scripts": {
