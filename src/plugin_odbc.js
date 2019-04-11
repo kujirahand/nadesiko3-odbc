@@ -93,7 +93,7 @@ const PluginODBC = {
   'ODBCトランザクション開始': { // @ODBCでトランザクションを開始する // ODBCとらんざくしょんかいし
     type: 'func',
     josi: [],
-    fn: function (sql, params, sys) {
+    fn: function (sys) {
       if (!sys.__odbc_db) throw new Error(ERR_OPEN_DB)
       sys.__odbc_db.beginTransactionSync()
     },
@@ -102,7 +102,7 @@ const PluginODBC = {
   'ODBCトランザクション終了': { // @ODBCでトランザクションを終了する // ODBCとらんざくしょんしゅうりょう
     type: 'func',
     josi: [],
-    fn: function (sql, params, sys) {
+    fn: function (sys) {
       if (!sys.__odbc_db) throw new Error(ERR_OPEN_DB)
       sys.__odbc_db.commitTransactionSync()
     },
