@@ -13,7 +13,7 @@ const PluginODBC = {
   // @ODBC
   'ODBC逐次開': { // @逐次実行構文にて、ODBCのデータベースを開く // @ODBCちくじひらく
     type: 'func',
-    josi: [['を', 'の']],
+    josi: [['を', 'の', 'で']],
     fn: function (s, sys) {
       if (!sys.resolve) throw new Error('『ODBC開』は' + ERR_ASYNC)
       sys.resolveCount++
@@ -30,7 +30,7 @@ const PluginODBC = {
   },
   'ODBC開': { // @ODBCのデータベースを同期的に開いてオブジェクトを返す // @ODBCひらく
     type: 'func',
-    josi: [['を', 'の']],
+    josi: [['を', 'の', 'で']],
     fn: function (s, sys) {
       const db = ODBC()
       sys.__odbc_db = db
