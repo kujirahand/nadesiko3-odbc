@@ -39,7 +39,7 @@ const PluginODBC = {
       return null
     }
   },
-  'ODBC逐次実行': { // @逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。 // ODBCちくじじっこう
+  'ODBC逐次実行': { // @逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。 // @ODBCちくじじっこう
     type: 'func',
     josi: [['を'], ['で']],
     fn: function (sql, params, sys) {
@@ -57,7 +57,7 @@ const PluginODBC = {
     },
     return_none: true
   },
-  'ODBC実行': { // @逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。 // SQLITE3をしゅとく
+  'ODBC実行': { // @逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。 // @SQLITE3をしゅとく
     type: 'func',
     josi: [['を'], ['で']],
     fn: function (sql, params, sys) {
@@ -66,7 +66,7 @@ const PluginODBC = {
       return rows
     }
   },
-  'ODBC閉': { // @ODBCで開いているデータベースを閉じる // ODBCとじる
+  'ODBC閉': { // @ODBCで開いているデータベースを閉じる // @ODBCとじる
     type: 'func',
     josi: [],
     fn: function (sys) {
@@ -75,7 +75,7 @@ const PluginODBC = {
     },
     return_none: true
   },
-  'ODBC逐次閉': { // @逐次実行構文でODBCで開いているデータベースを閉じる // ODBCちくじとじる
+  'ODBC逐次閉': { // @逐次実行構文でODBCで開いているデータベースを閉じる // @ODBCちくじとじる
     type: 'func',
     josi: [],
     fn: function (sys) {
@@ -90,7 +90,7 @@ const PluginODBC = {
     },
     return_none: true
   },
-  'ODBCトランザクション開始': { // @ODBCでトランザクションを開始する // ODBCとらんざくしょんかいし
+  'ODBCトランザクション開始': { // @ODBCでトランザクションを開始する // @ODBCとらんざくしょんかいし
     type: 'func',
     josi: [],
     fn: function (sys) {
@@ -99,7 +99,7 @@ const PluginODBC = {
     },
     return_none: true
   },
-  'ODBCトランザクション終了': { // @ODBCでトランザクションを終了する // ODBCとらんざくしょんしゅうりょう
+  'ODBCトランザクション終了': { // @ODBCでトランザクションを終了する // @ODBCとらんざくしょんしゅうりょう
     type: 'func',
     josi: [],
     fn: function (sys) {
