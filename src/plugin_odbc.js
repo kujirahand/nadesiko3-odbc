@@ -57,7 +57,7 @@ const PluginODBC = {
     },
     return_none: true
   },
-  'ODBC実行': { // @逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。 // @SQLITE3をしゅとく
+  'ODBC実行': { // @逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。 // @ODBCじっこう
     type: 'func',
     josi: [['を'], ['で']],
     fn: function (sql, params, sys) {
